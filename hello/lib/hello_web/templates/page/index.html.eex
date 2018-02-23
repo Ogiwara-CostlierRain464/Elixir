@@ -1,7 +1,7 @@
 <div class="jumbotron">
   <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
   <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-  <p><a href="<%= page_path @conn, :index %>">Link back to this page</a></p>
+  <p><a href="<%= user_path(HelloWeb.Endpoint, :index)  %>">show users</a></p>
 </div>
 
 <div class="row marketing">
@@ -35,3 +35,6 @@
     </ul>
   </div>
 </div>
+
+<div id="messages"></div>
+<input id="chat-input" type="text"></input>

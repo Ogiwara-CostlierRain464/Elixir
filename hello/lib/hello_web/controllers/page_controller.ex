@@ -8,9 +8,13 @@ defmodule HelloWeb.PageController do
   end
 
   def index(conn, _params) do
-    #render conn, "index.html"
-    pages = [%{title: "foo"},%{title: "bar"}]
+    render conn, "index.html"
+    #pages = [%{title: "foo"},%{title: "bar"}]
 
-    render conn, "index.json" , pages: pages
+    #render conn, "index.json" , pages: pages
   end
+
+  def test(conn, _params) do
+    render conn, "test.html"
+  end  
 end
