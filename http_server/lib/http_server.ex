@@ -11,5 +11,4 @@ defmodule HttpServer do
     |> Plug.Conn.send_resp(200, "Hello world!")
   end
 
-
 end
